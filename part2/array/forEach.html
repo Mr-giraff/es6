@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr = ['apple','banana','potato','tomato'];
+        arr.forEach((val,index,array)=>{
+            console.log(this,val,index,array);
+        });
+        /*arr.forEach(function (val,index,array) {
+            console.log(this,val,index,array);
+        },'123');*/
+    </script>
+</body>
+</html>

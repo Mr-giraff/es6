@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr = [
+            {name:'apple',price:'low'},
+            {name:'banana',price:'high'},
+            {name:'orange',price:'low'},
+            {name:'tomato',price:'high'},
+        ];
+        let newArr = arr.map((val,index,array)=>{
+            console.log(val,index,array);
+            let json = {
+                name:val.name,
+                p:val.price,
+            }
+            return json;
+        });
+        console.log(newArr);
+    </script>
+</body>
+</html>
